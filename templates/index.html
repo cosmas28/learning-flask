@@ -1,10 +1,18 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+{% extends "layout.html" %}
 
-</body>
-</html>
+{% block content %}
+<main class="hero-section">
+    <div class="container">
+
+        <div class="section-content">
+            <h2>Discover places near you.</h2>
+            <a href="#" class="btn-primary">Sign up</a>
+            <a href="{{ url_for('about') }}" class="btn-secondary">Learn more</a>
+        </div>
+
+        <div class="section-device">
+            <img src="static/img/device.png">
+        </div>
+    </div>
+</main>
+{% endblock %}
